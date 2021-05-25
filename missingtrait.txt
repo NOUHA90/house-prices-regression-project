@@ -1,0 +1,10 @@
+Comment je traite les valeurs manquantes:
+- si l'intervall des valeurs manquantes dans une colonne reprsente 80% ou plus par rapport (à la dimenssion) au shape de notre dataset,
+je la considere comme inutile dans la plus part du temps
+- si, moins de 80%, il y a plusieurs d'autres techniques qui se basent généralement sur la stratégie d'imputation:
+	- soit on remplace par la valeur la plus fréquente 
+	- soit par la médiane si notre variable suit la loi normale
+	- soit on utilise les algoritmes de machine learning :
+		comme:
+			* la regression s'il existe des relation de correlation et de linearité entre les variables
+			* la classification : KNN
